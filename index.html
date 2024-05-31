@@ -13,6 +13,18 @@
     <script src="public/Assets/js/app.js"></script>
     <script>
 
+            $(function() {
+                const urlParams = new URLSearchParams(windows.location.search);
+                var meeting_id = URLSearchParams.get('meetingID');
+                user_id = window.prompt('Enter your userid');
+
+                if (!user_id || !meeting_id){
+                    alert('User id or meeting ID is required')
+                }
+
+
+
+            })
     </script>
 </head>
 <body>
